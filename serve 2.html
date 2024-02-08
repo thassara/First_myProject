@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mico</title>
+
+
+    <link href="./Style/styles.css" rel="stylesheet" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    text-decoration: none;
+}
+.header{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff7200;
+}
+
+.navdiv{
+    margin-bottom: 20px;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color:aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px ;
+}
+button{
+    background-color:#ff7200;
+    margin-left: 10px ;
+    border-radius: 10px;
+    margin-right: 25px;
+    width: 90px;
+}
+button a{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 15px;
+}
+        /* Add CSS styles for the bill calculation section */
+        #bill-container {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        #bill-form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        #bill-form label,
+        #bill-form select,
+        #bill-form input,
+        #bill-form button {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #result-container {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+       
+    /* Add CSS styles for the bill calculation section */
+    #bill-container {
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+
+    #bill-form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #bill-form label {
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        color: #333;
+    }
+
+    #bill-form select,
+    #bill-form input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    #calculate-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #calculate-button:hover {
+        background-color: darkred;
+    }
+
+    #result-container {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+
+    </style>
+    
+
+</head>
+
+<body>
+    <div class="navdiv">
+        <div class="logo">
+            <h1 class="header">Phoneix</h1>
+        </div>
+        <ul>
+        <li><a href="afhome.php">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="pack.html">PACKAGES</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
+            <button>Login</button>
+        </ul>
+
+    </div>
+  
+    <header>
+        <h1>Construction Company Repair and Maintenance Service Offering With Pricing</h1>
+    </header>
+    
+
+    <div class="menu-container">
+        
+
+        <div class="content">
+            <a href="#">
+                <img src="./service/images/construction.png" alt="">
+                <h3>Construction Services</h3>
+                <ul>
+                    <li>Bridge construction</li>
+                    <li>Commercial Buildings</li>
+                    <li>Sewage Construction</li>
+                    <li>Escalators and Lifts</li>
+                </ul>
+
+                <button class="buy-1">$100</button>
+            </a>
+        </div>
+
+        <div class="content">
+            <a href="#">
+                <img src="./service/images/pngwing.com (5).png" alt="">
+                <h3>Maintenance Services</h3>
+                <ul>
+                    <li>Roads Maintenance</li>
+                    <li>Factory Maintenance</li>
+                    <li>Building Maintenance</li>
+                    <li>Water System</li>
+                </ul>
+
+                <button class="buy-2">$130</button>
+            </a>
+        </div>
+
+        <div class="content">
+            <a href="#">
+                <img src="./service/images/pngwing.com (4).png" alt="">
+                <h3>Repair Services</h3>
+                <ul>
+                    <li>Bridge Repairs</li>
+                    <li>Factory Repairs</li>
+                    <li>Whraves Repairs</li>
+                    <li>Apartment Repairs</li>
+                </ul>
+
+                <button class="buy-3">$150</button>
+            </a>
+        </div>
+
+
+        <div class="content">
+            <a href="#">
+                <img src="./service/images/rs=h_500,cg_true.webp" alt="">
+                <h3>Protective Coating Services</h3>
+                <ul>
+                    <li>Fire Proffing</li>
+                    <li>Bridge Construction</li>
+                    <li>Chemical Corrosion</li>
+                    <li>Fire Proffing</li>
+                    
+                </ul>
+
+                <button class="buy-4">$200</button>
+            </a>
+        </div>
+
+        
+
+
+    </div>
+    
+    <div id="bill-container">
+        
+        <form id="bill-form">
+            <h2>Calculate Your Bill</h2>
+            <label for="service-select">Select Service:</label>
+            <select id="service-select">
+                <option value="0">Choose a service</option>
+                <option value="100">Construction Services - $100</option>
+                <option value="130">Maintenance Services - $130</option>
+                <option value="150">Repair Services - $150</option>
+                <option value="200">Protective Coating Services - $200</option>
+            </select>
+
+            <label for="promo-code">Promotion Code:</label>
+            <input type="text" id="promo-code" placeholder="Enter promotion code">
+
+            <button type="button" id="calculate-button">Calculate</button>
+        </form>
+    </div>
+
+    <!-- Display total bill and promotions -->
+    <div id="result-container">
+        <h2>Total Bill: $<span id="total-bill">0</span></h2>
+        <p>Promotions: <span id="promotions">No promotions applied</span></p>
+    </div>
+
+    <script>
+        // Function to calculate the bill based on user inputs
+        document.getElementById('calculate-button').addEventListener('click', function () {
+            const servicePrice = parseFloat(document.getElementById('service-select').value);
+            const promoCode = document.getElementById('promo-code').value;
+
+            // Calculate bill based on service and apply promotions if applicable
+            let currentBill = servicePrice;
+            let appliedPromotions = 'No promotions applied';
+
+            if (promoCode === 'SAVE10') {
+                currentBill *= 0.9; // 10% discount for promotion code 'SAVE10'
+                appliedPromotions = '10% off with promo code SAVE10';
+            }
+
+            // Update the displayed bill and promotions
+            document.getElementById('total-bill').textContent = currentBill.toFixed(2);
+            document.getElementById('promotions').textContent = appliedPromotions;
+        });
+    </script>
+</body>
+
+</html>
+<!--In this code, we added a form that allows the user to select a service and enter a promotion code.
+     When the "Calculate" button is clicked, it calculates the bill based on the selected service and 
+     applies a discount if the entered promotion code matches 'SAVE10'. 
+     The total bill and applied promotions are displayed at the bottom of the page.
+      You can customize the promotion codes and discounts as needed.-->
+
+
+
+
+
+
+   
+</body>
+
+</html>

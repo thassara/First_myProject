@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href=".\Style\pack.css">
+</head>
+<body>
+    <div class="top">
+        <!DOCTYPE html>
+        <html>
+        <head>
+
+        </head>
+        <body>
+            <!--Navigation bar-->
+                <div class="navdiv">
+                    <div class="logo">
+                        <h1 class="header">Phoneix</h1>
+                    </div>
+                    <ul>
+                        <li><a href="afhome.php">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="serve 2.html">SERVICE</a></li>
+                        <li><a href="pack.html">PACKAGES</a></li>
+                        <li><a href="contact.php">CONTACT</a></li>
+                       <li> <a href="log.php"> <button class="btn">Log In</button></a></li>
+               <li> <a href="Registration.php"> <button class="btn">Sign In</button></a></li>
+               <li> <a href="conPage.php"> <button class="btn">Construction</button></a></li>
+                    </ul>
+        
+                </div>
+                
+                    <h1>Dream Plan and Build</h1>
+                    <h1 class="subh">with us</h1>
+                    <br>
+                    <p class="sub-moto" style="font-size: 24px;">Choose your dream package : </p>
+            <!--images-->
+            <div class="center">
+            <div class="image-container">
+                <img src=".\Image\normal house.png" alt="Image 1">
+                <div class="bottomline">Normal House = $100</div>
+            </div>
+            <div class="image-container">
+                <img src="image\modernhouse.jpg" alt="Image 2">
+                <div class="bottomline">Modern House = $500</div>
+            </div>
+            <div class="image-container">
+                <img src=".\Image\luxury.jpg" alt="Image 3">
+                <div class="bottomline">Luxury apartment = $1000</div>
+            </div>
+            <div class="image-container">
+                <img src=".\Image\buliding.jpg" alt="Image 4">
+                <div class="bottomline">Building = $2000</div>
+            </div>
+        </div>
+        </body>
+        </html>
+        
+    </div><!--Dropdown selection-->
+    <div id="package-selection" method="POST">
+        <h2 class="select">Select a Package:</h2>
+        <select id="package" method="POST">
+            <option value="house">House </option>
+            <option value="modern-house">Modern House </option>
+            <option value="luxury-apartment">Luxury Apartment </option>
+            <option value="building">Building </option>
+        </select>
+        <button onclick="calculateBill()" >Add to Bill</button>
+    </div>
+
+    <div id="bill">
+        <h2>Bill:</h2>
+        <div id="bill-items"></div>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button onclick="clearLastItem()">Clear Last</button>
+    </div>
+    
+    <script src="js\pack.js"></script>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h1>Contact Us</h1>
+                <p>PhoenixConstruction.com</p>
+                <p>Phone:077-0348898</p>
+                <p>Address:Phoenix Construction Company</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Packages</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="bottom-bar">
+                <p>&copy; 2023 Phoenix company . All rights reserved</p>
+            </div>
+    </footer>
+</body>
+</html>
